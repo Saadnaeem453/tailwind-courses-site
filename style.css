@@ -1,0 +1,31 @@
+.footer {
+    position: relative;
+    /* Ensure the footer is positioned relative to contain the absolute overlay */
+    background-image: url('./assets/rear-view-programmer-working-all-night-long.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 51, 0.8);
+
+    z-index: 0;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.home {
+    background-image: url("./assets/professional-programmer-working-late-dark-office.jpg");
+}
